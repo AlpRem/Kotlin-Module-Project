@@ -67,7 +67,7 @@ class HandlerServiceImpl: HandlerService {
             outputService.consoleOutput(nodeRepository.findByArchiveAndId(currentItem as Archive, index - 1))
             var i = -1
             while (i!=0){
-                i = readlnOrNull()?.toIntOrNull()!!
+                i = readlnOrNull()?.toIntOrNull() ?: continue
             }
         }
     }
